@@ -1,8 +1,5 @@
-﻿@using EPiServer.Core
-@using EPiServer.Web.Mvc.Html
-
+﻿@using EPiServer.Web.Mvc.Html
 @model AlloyTraining.Models.Pages.StartPage
-
 <h1 @Html.EditAttributes(m => m.Heading)>
     @(Model.Heading ?? Model.Name)
 </h1>
