@@ -9,7 +9,8 @@ namespace AlloyTraining.Models.Pages
         // your code will have a random GUID here
         GroupName = SiteGroupNames.Specialized, Order = 10,
         Description = "The home page for a website with an area for blocks and partial pages.")]
-    public class StartPage : PageData
+    [SiteStartIcon]
+    public class StartPage : SitePageData
     {
         [CultureSpecific]
         [Display(Name = "Heading",
